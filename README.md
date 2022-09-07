@@ -1,10 +1,10 @@
-# linked-lists
+# Linked Lists
 ###### Creating a linked list data structure and its functions
 
-### [Link to assignment](https://www.theodinproject.com/lessons/javascript-linked-lists)
-### [Try Linked Lists here](https://TYLPHE.github.io/linked-lists/)
+#### [Link to assignment](https://www.theodinproject.com/lessons/javascript-linked-lists)
+#### [Try Linked Lists here](https://TYLPHE.github.io/linked-lists/)
 
-### Summary
+#@ Summary
 This project contains two factory functions called `Node`, which returns the node value and next pointer, and `LinkedList`, which contains head and all of its functions:
 ```javascript
 function Node(v = null, next = null) {
