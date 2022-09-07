@@ -81,7 +81,7 @@ function LinkedList() {
 }
 ```
 
-I manually tested each function by creating a list and using each function with different values. 
+I manually tested each function by creating a `list` variable and running each function with different values. 
 ```javascript
 const list = LinkedList();
 list.append(2);
