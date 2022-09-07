@@ -1,3 +1,10 @@
+function Node(v = null, next = null) {
+  return {
+    value: v,
+    next: next,
+  }
+}
+
 function LinkedList() {
   return {
     head: null,
@@ -157,13 +164,6 @@ function LinkedList() {
         current = current.next;
       }
     },
-  }
-}
-
-function Node(v = null, next = null) {
-  return {
-    value: v,
-    next: next,
   }
 }
 
