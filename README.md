@@ -4,7 +4,7 @@
 #### [Link to assignment](https://www.theodinproject.com/lessons/javascript-linked-lists)
 #### [Try Linked Lists here](https://TYLPHE.github.io/linked-lists/)
 
-#@ Summary
+## Summary
 This project contains two factory functions called `Node`, which returns the node value and next pointer, and `LinkedList`, which contains head and all of its functions:
 ```javascript
 function Node(v = null, next = null) {
@@ -17,64 +17,65 @@ function Node(v = null, next = null) {
 function LinkedList() {
   return {
     head: null,
-    // appends new node at the end of the list with value(v)
+
+    // Append new node at the end of the list with value(v)
     append(v) {
       // ...code
     },
 
-    // prepends new node at the beginning of the list with value(v)
+    // Prepend new node at the beginning of the list with value(v)
     prepend(v) {
       // ...code
     },
 
-    // returns total number of nodes in the list
+    // Return total number of nodes in the list
     size() {
       // ...code
     },
 
-    // returns the first node in the list
+    // Return the first node in the list
     findHead() {
       // ...code
     },
 
-    // returns the last node in the list
+    // Return the last node in the list
     tail() {
       // ...code
     },
 
-    // returns the node at the given index
+    // Return the node at the given index
     at(index) {
       // ...code
     },
 
-    // removes the last element from the list
+    // Remove the last element from the list
     pop() {
       // ...code
     },
 
-    // returns true if the value is in the list and otherwise returns false.
+    // Return true if the value is in the list and otherwise returns false
     contains(v) {
       // ...code
     },
 
-    // returns the index of the node containing value, or null if not found
+    // Return the index of the node containing value, or null if not found
     find(v) {
       // ...code
     },
 
-    // prints the linked list to the console
+    // Print the linked list to the console
     toString() {
       // ...code
     },
 
-    // inserts new node with the provided value at the given index
+    // Insert new node with the provided value at the given index
     insertAt(v, index) {
       // ...code
     },
 
-    // removes the node at the given index
+    // Remove the node at the given index
     removeAt(index) {
-        // ...code
+      // ...code
     },
   }
 }

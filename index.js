@@ -2,7 +2,7 @@ function LinkedList() {
   return {
     head: null,
 
-    // appends new node at the end of the list with value(v)
+    // Append new node at the end of the list with value(v)
     append(v) {
       // newNode object created with property data
       let newNode = Node(v);
@@ -20,7 +20,7 @@ function LinkedList() {
       }
     },
 
-    // prepends new node at the beginning of the list with value(v)
+    // Prepend new node at the beginning of the list with value(v)
     prepend(v) {
       // newNode object created with property data
       let newNode = Node(v, this.head);
@@ -29,7 +29,7 @@ function LinkedList() {
       this.head = newNode;
     },
 
-    // returns total number of nodes in the list
+    // Return total number of nodes in the list
     size() {
       let count = 0;
       let current = this.head;
@@ -41,13 +41,13 @@ function LinkedList() {
       return count;
     },
 
-    // returns the first node in the list
+    // Return the first node in the list
     findHead() {
       console.log('findHead(): ', this.head.value)
       return this.head.value;
     },
 
-    // returns the last node in the list
+    // Return the last node in the list
     tail() {
       let tail = this.head;
       while (tail.next) {
@@ -57,7 +57,7 @@ function LinkedList() {
       return tail.next;
     },
 
-    // returns the node at the given index
+    // Return the node at the given index
     at(index) {
       let i = 0;
       let current = this.head;
@@ -74,7 +74,7 @@ function LinkedList() {
       return current;
     },
 
-    // removes the last element from the list
+    // Remove the last element from the list
     pop() {
       let current = this.head;
       while (current.next.next) {
@@ -85,7 +85,7 @@ function LinkedList() {
       return current;
     },
 
-    // returns true if the value is in the list and otherwise returns false.
+    // Return true if the value is in the list and otherwise returns false
     contains(v) {
       let current = this.head;
       while (current) {
@@ -99,7 +99,7 @@ function LinkedList() {
       return false;
     },
 
-    // returns the index of the node containing value, or null if not found
+    // Return the index of the node containing value, or null if not found
     find(v) {
       let current = this.head;
       let i = 0;
@@ -115,7 +115,7 @@ function LinkedList() {
       return null
     },
 
-    // prints the linked list to the console
+    // Print the linked list to the console
     toString() {
       let str = '';
       let current = this.head;
@@ -131,7 +131,7 @@ function LinkedList() {
       return str;
     },
 
-    // inserts new node with the provided value at the given index
+    // Insert new node with the provided value at the given index
     insertAt(v, index) {
       let current = this.head;
       let i = 0;
@@ -145,7 +145,7 @@ function LinkedList() {
       }
     },
 
-    // removes the node at the given index
+    // Remove the node at the given index
     removeAt(index) {
       let current = this.head;
       let i = 0;
