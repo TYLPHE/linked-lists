@@ -70,7 +70,7 @@ function LinkedList() {
           return console.error(`Out of range. Max value is ${this.size() - 1}`)
         }
       }
-      console.log('at(): ', current)
+      console.log(`at(${index}): `, current)
       return current;
     },
 
@@ -90,12 +90,12 @@ function LinkedList() {
       let current = this.head;
       while (current) {
         if (current.value === v) {
-          console.log('contains(): ', true)
+          console.log(`contains(${v}): `, true)
           return true;
         }
         current = current.next;
       }
-      console.log('contains(): ', false)
+      console.log(`contains(${v}): `, false)
       return false;
     },
 
